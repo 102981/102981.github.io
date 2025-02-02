@@ -6,6 +6,7 @@
 }
 
 
+
 /* Header */
 header {
     padding: 80px;
@@ -16,6 +17,7 @@ header {
     background-size: 100%;
     background-position-y: 78%;
 }
+
 
 
 /* Navbar*/
@@ -57,7 +59,183 @@ nav a:hover {
 }
 
 
-/* Page content */
+
+/* index main */
+.spacing {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+}
+
+.cv.back {
+    display: grid;
+    grid-template-columns: 280px auto 280px;
+    margin: auto;
+    width: 90%;
+}
+
+.cv-L {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #777;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 0 0 5px;
+}
+
+.cv-C {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.cv-R {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: #999;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+
+div.profile {
+    width: 100%;
+    margin: auto;
+}
+
+div.textbox {
+    background-color: aliceblue;
+    margin: 2.5% 5% 5% 5%;
+    border-radius: 10px;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+}
+
+img.profile {
+    border-radius: 10px;
+    width: 90%;
+    margin: 5% 5% 2.5% 5%;
+}
+
+.cv-C.title {
+    margin: 1em auto 0.5em auto;
+    padding: 1em;
+    background-color: aliceblue;
+    border-radius: 10px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .cv-C.title {
+        margin: 1em 1em 0.5em 1em;
+    }
+}
+
+.cv-C.content {
+    height: min-content;
+    margin: 0.5em auto auto auto;
+    width: 90%;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 1em;
+}
+
+.cv-C.content > p {
+    padding-bottom: 0.5em;
+}
+
+.skills {
+    display: grid;
+    grid-template-rows: 12% 33% 33% 22%;
+    grid-template-columns: 100%;
+    padding: 5% 5% 5% 5%;
+    background-color: #555;
+    width: 95%;
+    margin: 5% 5% 5% 0;
+    border-radius: 10px;
+    height: 600px;
+    color: inherit;
+}
+
+h2.title {
+    border-radius: 0;
+    margin: auto;
+    color: whitesmoke;
+    color: inherit;
+}
+
+.scores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    border-top: solid black 1px;
+    color: inherit;
+}
+
+.skill {
+    color: whitesmoke;
+}
+
+.scorebox {
+    color: inherit;
+    display: flex;
+    /* margin-right: 10%; */
+}
+
+.name {
+    color: inherit;
+    width: 50%;
+}
+
+.dots {
+    color: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dot {
+    background-color: #555;
+    height: 1em;
+    width: 1em;
+    border: 2px solid white;
+    border-radius: 1em;
+}
+
+.dot.fill {
+    background-color: white;
+}
+
+.text-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.question {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5%;
+}
+
+.answer {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: medium;
+}
+
+
+
+/* Motivation content */
 blockquote {
     width: 50%;
     margin: auto;
@@ -114,30 +292,6 @@ blockquote {
 
 
 
-.text-side {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.question {
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 5%;
-}
-
-.answer {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: medium;
-}
-
-
-
 /* Footer */
 footer {
     padding: 40px;
@@ -154,6 +308,7 @@ footer.stuck {
     left: 0;
     bottom: 0;
 }
+
 
 
 /* Animations */
